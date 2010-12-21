@@ -9,7 +9,7 @@ module Itunes
     end
     
     def to_s
-      puts "\"#{@title}\"\n#{@artist}\n#{@album}"
+      "song:\t#{@title}\nartist:\t#{@artist}\nalbum:\t#{@album}"
     end
   end
 end

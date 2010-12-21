@@ -4,3 +4,4 @@ end
 
 require 'itunes/track'
 require 'itunes/player'
+require 'itunes/cli'
