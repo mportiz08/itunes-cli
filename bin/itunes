@@ -2,6 +2,6 @@
 
 $:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
 
-require 'itunes_cli'
+require 'itunes-cli'
 
 ItunesCLI::App.dispatch
