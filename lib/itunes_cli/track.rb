@@ -1,4 +1,4 @@
-module Itunes
+module ItunesCLI
   class Track
     attr_reader :title, :artist, :album
     

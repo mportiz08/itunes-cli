@@ -1,7 +1,7 @@
 require 'optitron'
 
-module Itunes
-  class CLI < Optitron::CLI
+module ItunesCLI
+  class App < Optitron::CLI
     desc "Shows information about the current track"
     def show
       player = Player.new

@@ -1,6 +1,6 @@
 require 'win32ole'
 
-module Itunes
+module ItunesCLI
   class Player
     def initialize
       @itunes = WIN32OLE.new("iTunes.Application")
