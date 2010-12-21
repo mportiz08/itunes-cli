@@ -1,5 +1,9 @@
 module ItunesCLI
   VERSION = "0.0.1"
+  
+  def version
+    VERSION
+  end
 end
 
 require 'itunes-cli/track'
