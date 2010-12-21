@@ -6,8 +6,12 @@ module Itunes
       @itunes = WIN32OLE.new("iTunes.Application")
     end
     
-    def play_or_pause
-      @itunes.PlayPause()
+    def play
+      @itunes.Play()
+    end
+    
+    def pause
+      @itunes.Pause()
     end
     
     def prev

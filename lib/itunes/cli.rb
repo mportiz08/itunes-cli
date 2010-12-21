@@ -11,13 +11,13 @@ module Itunes
     desc "Plays the current track"
     def play
       player = Player.new
-      player.play_or_pause
+      player.play
     end
     
     desc "Pauses the current track"
     def pause
       player = Player.new
-      player.play_or_pause
+      player.pause
     end
     
     desc "Plays the previous track"
