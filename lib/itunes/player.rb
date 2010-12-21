@@ -14,6 +14,10 @@ module Itunes
       @itunes.Pause()
     end
     
+    def stop
+      @itunes.Stop()
+    end
+    
     def prev
       @itunes.PreviousTrack()
     end

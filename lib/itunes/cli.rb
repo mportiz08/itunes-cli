@@ -20,6 +20,12 @@ module Itunes
       player.pause
     end
     
+    desc "Stop the current track"
+    def stop
+      player = Player.new
+      player.stop
+    end
+    
     desc "Plays the previous track"
     def prev
       player = Player.new
