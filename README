@@ -1,0 +1,11 @@
+Commands
+
+show          # Shows information about the current track
+play          # Plays the current track
+pause         # Pauses the current track
+prev          # Plays the previous track
+next          # Plays the next track
+
+Global options
+
+-?/--help     # Print help message
