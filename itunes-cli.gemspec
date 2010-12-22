@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "bin/itunes",
+    "itunes-cli.gemspec",
     "lib/itunes-cli.rb",
     "lib/itunes-cli/app.rb",
     "lib/itunes-cli/player.rb",
