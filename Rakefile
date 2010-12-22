@@ -10,6 +10,8 @@ begin
     gem.email = "mportiz08@gmail.com"
     gem.homepage = "http://github.com/mportiz08/itunes-cli"
     gem.authors = ["Marcus Ortiz"]
+    gem.add_dependency "optitron"
+    gem.executables = ["itunes"]
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

@@ -1,7 +1,14 @@
 require 'optitron'
 
 module ItunesCLI
-  class App < Optitron::CLI
+  class App < Optitron::CLI   
+    include ItunesCLI
+    
+    desc "displays the current version of itunes-cli"
+    def version
+      puts "#{NAME} v#{VERSION}\nby #{AUTHOR}"
+    end
+    
     desc "Shows information about the current track"
     def show
       player = Player.new
