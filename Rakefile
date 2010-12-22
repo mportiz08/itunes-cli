@@ -3,6 +3,7 @@ require 'rake'
 
 begin
   require 'jeweler'
+  require '.lib/itunes-cli'
   Jeweler::Tasks.new do |gem|
     gem.name = "itunes-cli"
     gem.summary = %Q{a command line interface for itunes}
@@ -12,6 +13,7 @@ begin
     gem.authors = ["Marcus Ortiz"]
     gem.add_dependency "optitron"
     gem.executables = ["itunes"]
+    gem.version = ItunesCLI::VERSION
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
