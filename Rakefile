@@ -3,7 +3,7 @@ require 'rake'
 
 begin
   require 'jeweler'
-  require '.lib/itunes-cli'
+  require './lib/itunes-cli'
   Jeweler::Tasks.new do |gem|
     gem.name = "itunes-cli"
     gem.summary = %Q{a command line interface for itunes}
