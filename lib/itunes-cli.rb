@@ -4,6 +4,7 @@ module ItunesCLI
   NAME    = "itunes-cli"
 end
 
-require 'itunes-cli/track'
-require 'itunes-cli/player'
-require 'itunes-cli/app'
+dir = File.expand_path(File.dirname(__FILE__))
+require File.join(dir, 'itunes-cli', 'track')
+require File.join(dir, 'itunes-cli', 'player')
+require File.join(dir, 'itunes-cli', 'app')
