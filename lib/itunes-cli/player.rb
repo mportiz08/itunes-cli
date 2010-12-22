@@ -2,6 +2,8 @@ require 'win32ole'
 
 module ItunesCLI
   class Player
+    attr_reader :itunes
+    
     def initialize
       @itunes = WIN32OLE.new("iTunes.Application")
     end
