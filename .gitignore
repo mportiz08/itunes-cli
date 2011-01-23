@@ -2,5 +2,6 @@
 coverage
 rdoc
 pkg
+.DS_Store
 
 ## PROJECT::SPECIFIC
