@@ -4,4 +4,8 @@ $:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
 
 require 'itunes-cli'
 
-ItunesCLI::App.dispatch
+if RUBY_PLATFORM =~ /cygwin|mswin|mingw|bccwin|wince|emx/
+  ItunesCLI::WinApp.dispatch
+else
+  ItunesCLI::OsxApp.dispatch
+end
