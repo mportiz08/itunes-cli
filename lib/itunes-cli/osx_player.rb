@@ -2,28 +2,24 @@ module ItunesCLI
   class OsxPlayer
     attr_reader :itunes
     
-    def initialize
-      # TODO
-    end
-    
     def play
-      # TODO
+      osa 'play'
     end
     
     def pause
-      # TODO
+      osa 'pause'
     end
     
     def stop
-      # TODO
+      osa 'stop'
     end
     
     def prev
-      # TODO
+      osa 'previous track'
     end
     
     def next
-      # TODO
+      osa 'next track'
     end
     
     def current
@@ -32,16 +28,20 @@ module ItunesCLI
     
     private
     
+    def osa(action)
+      %x(osascript -e 'tell app \"iTunes\" to #{action}').rstrip
+    end
+    
     def track
-      # TODO
+      osa "return name of current track"
     end
     
     def artist
-      # TODO
+      osa "return artist of current track"
     end
     
     def album
-      # TODO
+      osa "return album of current track"
     end
   end
 end

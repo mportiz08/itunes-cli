@@ -1,3 +1,5 @@
+require 'rubygems'
+
 module ItunesCLI
   VERSION = "0.1.0"
   AUTHOR  = "Marcus Ortiz"

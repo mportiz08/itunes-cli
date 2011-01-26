@@ -7,6 +7,7 @@ GEM
       ruby2ruby (~> 1.2.4)
       ruby_parser (~> 2.0)
       sexp_processor (~> 3.0.4)
+    rainbow (1.1)
     redgreen (1.2.2)
     ruby2ruby (1.2.5)
       ruby_parser (~> 2.0)
@@ -21,5 +22,6 @@ PLATFORMS
 
 DEPENDENCIES
   optitron
+  rainbow
   redgreen
   thoughtbot-shoulda

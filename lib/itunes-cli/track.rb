@@ -1,3 +1,5 @@
+require 'rainbow'
+
 module ItunesCLI
   class Track
     attr_reader :title, :artist, :album
@@ -9,7 +11,13 @@ module ItunesCLI
     end
     
     def to_s
-      "song:\t#{@title}\nartist:\t#{@artist}\nalbum:\t#{@album}"
+      song_label = 'song:'.foreground(:green)
+      artist_label = 'artist:'.foreground(:green)
+      album_label = 'album:'.foreground(:green)
+      title = @title.foreground(:cyan)
+      artist = @artist.foreground(:cyan)
+      album = @album.foreground(:cyan)
+      "#{song_label}\t#{title}\n#{artist_label}\t#{artist}\n#{album_label}\t#{album}"
     end
   end
 end
